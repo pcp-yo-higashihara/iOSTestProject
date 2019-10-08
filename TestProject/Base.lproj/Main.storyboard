@@ -18,14 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3a-xh-Usx">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gxq-Cb-i9e"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="vqb-uu-kB3">
+                                <rect key="frame" x="157" y="388" width="100" height="285"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3a-xh-Usx">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gxq-Cb-i9e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp7-uV-Yea">
+                                        <rect key="frame" x="0.0" y="85" width="100" height="30"/>
+                                        <state key="normal" title="show indicator"/>
+                                        <connections>
+                                            <action selector="tapIndicatorBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cCx-ar-K89"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtv-Fv-Jy4">
+                                        <rect key="frame" x="0.0" y="170" width="100" height="30"/>
+                                        <state key="normal" title="hide indicator"/>
+                                        <connections>
+                                            <action selector="tapHideIndicatorBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWW-gc-pwd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJb-9x-WDK">
+                                        <rect key="frame" x="0.0" y="255" width="100" height="30"/>
+                                        <state key="normal" title="to Another VC"/>
+                                        <connections>
+                                            <segue destination="1Eo-eW-VQ3" kind="show" id="cPF-Wz-sPw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebm-BQ-IaG">
                                 <rect key="frame" x="0.0" y="88" width="414" height="200"/>
                                 <subviews>
@@ -47,36 +72,14 @@
                                     <constraint firstAttribute="trailing" secondItem="aOR-NS-zcG" secondAttribute="trailing" id="vWJ-Px-Rc7"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJb-9x-WDK">
-                                <rect key="frame" x="159" y="688" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="to Another VC"/>
-                                <connections>
-                                    <segue destination="1Eo-eW-VQ3" kind="show" id="cPF-Wz-sPw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp7-uV-Yea">
-                                <rect key="frame" x="157" y="517" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="show indicator"/>
-                                <connections>
-                                    <action selector="tapIndicatorBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cCx-ar-K89"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtv-Fv-Jy4">
-                                <rect key="frame" x="160" y="595" width="94" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="hide indicator"/>
-                                <connections>
-                                    <action selector="tapHideIndicatorBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWW-gc-pwd"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.73725490199999999" blue="0.050980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="vqb-uu-kB3" firstAttribute="top" secondItem="Ebm-BQ-IaG" secondAttribute="bottom" constant="100" id="95T-0D-RAl"/>
                             <constraint firstItem="Ebm-BQ-IaG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="GvD-pb-sYc"/>
                             <constraint firstItem="Ebm-BQ-IaG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mf9-k1-vGM"/>
                             <constraint firstItem="Ebm-BQ-IaG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tj7-Ob-DxG"/>
+                            <constraint firstItem="vqb-uu-kB3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UEM-62-c3q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
