@@ -30,12 +30,15 @@ class ScrollVC: UIViewController{
 
 extension ScrollVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! ScrollCollectionViewCell
+        
+        cell.index = indexPath
+        cell.delegate = self
         
         switch indexPath.row {
         case 0:
@@ -44,10 +47,6 @@ extension ScrollVC: UICollectionViewDelegate, UICollectionViewDataSource {
             cell.backgroundColor = UIColor.red
         case 2:
             cell.backgroundColor = UIColor.green
-        case 3:
-            cell.backgroundColor = UIColor.gray
-        case 4:
-            cell.backgroundColor = UIColor.orange
         default:
             cell.backgroundColor = UIColor.black
         }
@@ -56,3 +55,24 @@ extension ScrollVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }    
 }
 
+extension ScrollVC: ScrollCellDelegate {
+    func btnTapped(cell: ScrollCollectionViewCell) {
+        let row = cell.index.row
+        
+        switch row {
+        case 0:
+            let rect = self.collectionView.layoutAttributesForItem(at: IndexPath(row: 1, section: 0))?.frame
+            self.collectionView.scrollRectToVisible(rect!, animated: true)
+            
+        case 1:
+            let rect = self.collectionView.layoutAttributesForItem(at: IndexPath(row: 2, section: 0))?.frame
+            self.collectionView.scrollRectToVisible(rect!, animated: true)
+        case 2:
+            let rect = self.collectionView.layoutAttributesForItem(at: IndexPath(row: 0, section: 0))?.frame
+            self.collectionView.scrollRectToVisible(rect!, animated: true)
+        default:
+            break
+        }
+        
+    }
+}

@@ -8,11 +8,22 @@
 
 import UIKit
 
-class ScrollCollectionViewCell: UICollectionViewCell {
+protocol ScrollCellDelegate: AnyObject {
+    func btnTapped(cell: ScrollCollectionViewCell)
+}
 
+class ScrollCollectionViewCell: UICollectionViewCell {
+    
+    var index: IndexPath!
+    
+    weak var delegate: ScrollCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    @IBAction func btnTapped(_ sender: Any) {
+        delegate?.btnTapped(cell: self)
+    }
 }
