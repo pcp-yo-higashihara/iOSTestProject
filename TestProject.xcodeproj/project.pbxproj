@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3104A83F23790081009461F4 /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3104A83E23790081009461F4 /* ScrollView.storyboard */; };
+		3104A8432379046B009461F4 /* ScrollCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104A8412379046B009461F4 /* ScrollCollectionViewCell.swift */; };
+		3104A8442379046B009461F4 /* ScrollCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3104A8422379046B009461F4 /* ScrollCollectionViewCell.xib */; };
+		3104A84723791390009461F4 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104A84623791390009461F4 /* FlowLayout.swift */; };
 		3117E8F7232765DB00FDC2C2 /* TestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3117E8F6232765DB00FDC2C2 /* TestProjectTests.swift */; };
+		3192A1292372E36600BC5E47 /* ScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3192A1282372E36600BC5E47 /* ScrollVC.swift */; };
 		31B8477B2346D8DF00E05026 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B8477A2346D8DF00E05026 /* UIViewController+Extension.swift */; };
 		31B8477E2346DD6E00E05026 /* UIActivityIndicatorView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B8477D2346DD6E00E05026 /* UIActivityIndicatorView+Extension.swift */; };
+		31D38FBC2355946200EE7532 /* TriangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D38FBB2355946200EE7532 /* TriangleButton.swift */; };
+		31D38FBF2355BEA100EE7532 /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D38FBE2355BEA100EE7532 /* RedView.swift */; };
+		31D38FC12355BEB000EE7532 /* RedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D38FC02355BEB000EE7532 /* RedView.xib */; };
+		31D38FC72355CADC00EE7532 /* BlueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D38FC52355CADC00EE7532 /* BlueView.xib */; };
+		31D38FC82355CADC00EE7532 /* BlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D38FC62355CADC00EE7532 /* BlueView.swift */; };
 		31F609EA22D58EC1003FF20B /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F609E922D58EC1003FF20B /* SecondVC.swift */; };
 		31FD5A6E214624BA005DBC4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD5A6D214624BA005DBC4C /* AppDelegate.swift */; };
 		31FD5A70214624BA005DBC4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FD5A6F214624BA005DBC4C /* ViewController.swift */; };
@@ -30,11 +40,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3104A83E23790081009461F4 /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
+		3104A8412379046B009461F4 /* ScrollCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollCollectionViewCell.swift; sourceTree = "<group>"; };
+		3104A8422379046B009461F4 /* ScrollCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollCollectionViewCell.xib; sourceTree = "<group>"; };
+		3104A84623791390009461F4 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		3117E8F4232765DA00FDC2C2 /* TestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3117E8F6232765DB00FDC2C2 /* TestProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectTests.swift; sourceTree = "<group>"; };
 		3117E8F8232765DB00FDC2C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3192A1282372E36600BC5E47 /* ScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC.swift; sourceTree = "<group>"; };
 		31B8477A2346D8DF00E05026 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		31B8477D2346DD6E00E05026 /* UIActivityIndicatorView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Extension.swift"; sourceTree = "<group>"; };
+		31D38FBB2355946200EE7532 /* TriangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleButton.swift; sourceTree = "<group>"; };
+		31D38FBE2355BEA100EE7532 /* RedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
+		31D38FC02355BEB000EE7532 /* RedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RedView.xib; sourceTree = "<group>"; };
+		31D38FC52355CADC00EE7532 /* BlueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueView.xib; sourceTree = "<group>"; };
+		31D38FC62355CADC00EE7532 /* BlueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueView.swift; sourceTree = "<group>"; };
 		31F609E922D58EC1003FF20B /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		31FD5A6A214624BA005DBC4C /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FD5A6D214624BA005DBC4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +85,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3104A83D2379005D009461F4 /* ScrollVC */ = {
+			isa = PBXGroup;
+			children = (
+				3104A8452379136D009461F4 /* CollectionView */,
+				3192A1282372E36600BC5E47 /* ScrollVC.swift */,
+				3104A83E23790081009461F4 /* ScrollView.storyboard */,
+			);
+			path = ScrollVC;
+			sourceTree = "<group>";
+		};
+		3104A8452379136D009461F4 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3104A8412379046B009461F4 /* ScrollCollectionViewCell.swift */,
+				3104A8422379046B009461F4 /* ScrollCollectionViewCell.xib */,
+				3104A84623791390009461F4 /* FlowLayout.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		3117E8F5232765DB00FDC2C2 /* TestProjectTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +123,49 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		31D38FBD2355BC2200EE7532 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				31D38FC42355CADC00EE7532 /* BlueView */,
+				31D38FC22355BEB500EE7532 /* RedView */,
+				31D38FBB2355946200EE7532 /* TriangleButton.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		31D38FC22355BEB500EE7532 /* RedView */ = {
+			isa = PBXGroup;
+			children = (
+				31D38FBE2355BEA100EE7532 /* RedView.swift */,
+				31D38FC02355BEB000EE7532 /* RedView.xib */,
+			);
+			path = RedView;
+			sourceTree = "<group>";
+		};
+		31D38FC42355CADC00EE7532 /* BlueView */ = {
+			isa = PBXGroup;
+			children = (
+				31D38FC52355CADC00EE7532 /* BlueView.xib */,
+				31D38FC62355CADC00EE7532 /* BlueView.swift */,
+			);
+			path = BlueView;
+			sourceTree = "<group>";
+		};
+		31D38FC92356EAB800EE7532 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				3104A83D2379005D009461F4 /* ScrollVC */,
+				31FD5A71214624BA005DBC4C /* Main.storyboard */,
+				31FD5A6F214624BA005DBC4C /* ViewController.swift */,
+				31F609E922D58EC1003FF20B /* SecondVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		31FD5A61214624B9005DBC4C = {
 			isa = PBXGroup;
 			children = (
 				31FD5A6C214624BA005DBC4C /* TestProject */,
-				31B8477C2346DD5400E05026 /* Extension */,
 				3117E8F5232765DB00FDC2C2 /* TestProjectTests */,
 				31FD5A6B214624BA005DBC4C /* Products */,
 				31FFB37722C46E17001C4486 /* Frameworks */,
@@ -107,12 +185,12 @@
 			isa = PBXGroup;
 			children = (
 				31FD5A6D214624BA005DBC4C /* AppDelegate.swift */,
-				31FD5A6F214624BA005DBC4C /* ViewController.swift */,
-				31F609E922D58EC1003FF20B /* SecondVC.swift */,
-				31FD5A71214624BA005DBC4C /* Main.storyboard */,
+				31D38FC92356EAB800EE7532 /* VC */,
 				31FD5A74214624BA005DBC4C /* Assets.xcassets */,
 				31FD5A76214624BA005DBC4C /* LaunchScreen.storyboard */,
 				31FD5A79214624BA005DBC4C /* Info.plist */,
+				31D38FBD2355BC2200EE7532 /* CustomView */,
+				31B8477C2346DD5400E05026 /* Extension */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -215,8 +293,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3104A8442379046B009461F4 /* ScrollCollectionViewCell.xib in Resources */,
 				31FD5A78214624BA005DBC4C /* LaunchScreen.storyboard in Resources */,
 				31FD5A75214624BA005DBC4C /* Assets.xcassets in Resources */,
+				31D38FC72355CADC00EE7532 /* BlueView.xib in Resources */,
+				31D38FC12355BEB000EE7532 /* RedView.xib in Resources */,
+				3104A83F23790081009461F4 /* ScrollView.storyboard in Resources */,
 				31FD5A73214624BA005DBC4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,8 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3104A84723791390009461F4 /* FlowLayout.swift in Sources */,
+				31D38FBF2355BEA100EE7532 /* RedView.swift in Sources */,
+				3192A1292372E36600BC5E47 /* ScrollVC.swift in Sources */,
 				31B8477B2346D8DF00E05026 /* UIViewController+Extension.swift in Sources */,
+				3104A8432379046B009461F4 /* ScrollCollectionViewCell.swift in Sources */,
+				31D38FBC2355946200EE7532 /* TriangleButton.swift in Sources */,
 				31B8477E2346DD6E00E05026 /* UIActivityIndicatorView+Extension.swift in Sources */,
+				31D38FC82355CADC00EE7532 /* BlueView.swift in Sources */,
 				31FD5A70214624BA005DBC4C /* ViewController.swift in Sources */,
 				31F609EA22D58EC1003FF20B /* SecondVC.swift in Sources */,
 				31FD5A6E214624BA005DBC4C /* AppDelegate.swift in Sources */,

@@ -33,6 +33,16 @@ class ViewController: UIViewController {
         indicator.stop()
     }
     
+    @IBAction func hoge(_ sender: Any) {
+        print("hoge")
+    }
+    
+    @IBAction func tapScrollBtn(_ sender: Any) {
+        
+        let scrollVC = UIStoryboard.init(name: "ScrollView", bundle: nil).instantiateInitialViewController() as! ScrollVC
+        present(scrollVC, animated: true, completion: nil)
+    }
+    
     
     @IBAction func buttonAction(_ sender: Any) {
         //baseView.frame = CGRect(x: baseView.frame.minX, y: baseView.frame.minY, width: baseView.frame.width, height: baseView.frame.height + 200)
