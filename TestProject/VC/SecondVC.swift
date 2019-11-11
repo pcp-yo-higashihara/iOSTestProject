@@ -25,4 +25,7 @@ class SecondVC: UIViewController {
         redViewHeightConstraint = redView.heightAnchor.constraint(equalToConstant: val)
         redViewHeightConstraint?.isActive = true
     }
+    @IBAction func dismissTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
