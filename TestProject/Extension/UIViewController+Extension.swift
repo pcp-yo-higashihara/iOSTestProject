@@ -15,7 +15,7 @@ extension UIViewController {
         let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
         activityIndicator.center = view.center
         activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorView.Style.gray
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
         activityIndicator.isHidden = true
         self.view.addSubview(activityIndicator)
         return activityIndicator
@@ -30,7 +30,7 @@ extension UIViewController {
         let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
         activityIndicator.center = view.center
         activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorView.Style.gray
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
         activityIndicator.tag = 100000
         self.view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
