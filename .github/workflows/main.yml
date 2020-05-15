@@ -26,7 +26,6 @@ jobs:
         xcodebuild
         -sdk iphonesimulator
         -configuration Debug
-        -workspace TestProject.xcodeproj
         -scheme TestProject
         build
 
