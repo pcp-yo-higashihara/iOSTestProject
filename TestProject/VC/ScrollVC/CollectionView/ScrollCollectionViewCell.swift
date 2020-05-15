@@ -20,7 +20,6 @@ class ScrollCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     @IBAction func btnTapped(_ sender: Any) {

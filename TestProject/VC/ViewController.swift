@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         animation.duration = 0.5
         animation.autoreverses = true
         animation.repeatCount = .infinity
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         circle.add(animation, forKey: "animation")
         
         replicatorLayer.instanceDelay = 0.1
