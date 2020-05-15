@@ -11,14 +11,23 @@ jobs:
     # チェックアウト
     - uses: actions/checkout@v1
     
+    - name: Select Xcode version # Xcode 11.3 を使う
+      run: sudo xcode-select -s '/Applications/Xcode_11.3.app/Contents/Developer'
+    
+    - name: Show Xcode version
+      run: xcodebuild -version
+    
+    - name: Build # シミュレーター向けにビルド
+      run: xcodebuild -sdk iphonesimulator -configuration Debug build 
+    
     # ビルド
     - name: Xcode build
       run: set -o pipefail &&
         xcodebuild
         -sdk iphonesimulator
-        -configuration DevelopDebug
-        -workspace Every.xcworkspace
-        -scheme Every_Develop
+        -configuration Debug
+        -workspace TestProject.xcodeproj
+        -scheme TestProject
         build
 
     # # 単体テストの実行
@@ -27,7 +36,5 @@ jobs:
         xcodebuild
         -sdk iphonesimulator
         -configuration Debug
-        -workspace Every.xcworkspace
-        -scheme Every_Develop
-        -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max'
+        -scheme TestProject
         clean test
